@@ -583,9 +583,7 @@ endif()
 find_package(OpenGL)
 find_package(GLUT)
 set(HAVE_OPENGL FALSE)
-if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND GLUT_FOUND)
-  set(HAVE_OPENGL TRUE)
-endif()
+
 # Purely to satisfy the generated headers:
 check_include_file(GL/gl.h HAVE_GL_GL_H)
 check_include_file(GL/glu.h HAVE_GL_GLU_H)
